@@ -23,11 +23,16 @@ NEXT_ANNOUNCE = 1
 NEXT_FETCH = 1
 PREV_ANNOUNCE = time.time()-3600*24*5
 
-GIFS = ["https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODVmMGNlNjA0ZjIxNjJhNzg4NzY4MGM4ZGI0MDQzZWJiYTdiM2IyYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/OojQx4M3zYUOk/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmUyMDM1MjAyNTA0MjNmOWI0ZGJkZGY3NTNjNzVkMDY4M2Q0NWViZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/o7GBrAimljPyJHXM4z/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYThiZDkyZTQyMGNmMzYxZTVhN2I0Mjk5YTliODJlMjc2Y2QzYTQ5NCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xHEf4bTL53m0g/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNkNzllMzAxZTJlOGRhZjllNDVlOWZlNDdiZDViNDlmNDIzMWM0ZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/weR19smQUjVhm/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNkNzllMzAxZTJlOGRhZjllNDVlOWZlNDdiZDViNDlmNDIzMWM0ZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/weR19smQUjVhm/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmJkYTRiMzYzMzMxMWZkZWE1OTVjY2IzNDZhMGI2ZDEwYzNhYWMwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/2UtitmPJZVDBTQPDX0/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmJkYTRiMzYzMzMxMWZkZWE1OTVjY2IzNDZhMGI2ZDEwYzNhYWMwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/2UtitmPJZVDBTQPDX0/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTIxMGFiOGJhNzlhN2FjZGRjOGZjMDI2ZTVjYzZkMTVhNjI2ZmFhYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/oKcjVnEYh7DY4/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEyMzY1ZmU1YWZmOTFjNDBjZTFlNDljZjMyZTEwZGIxOTkwNzZmOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fUwxLWCHe26xxAcATE/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzg2ZTgwYzU1OGJiNjAxZDZjYTM5YjNlYWJmMDI0YjBjNzhkZWNiNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/FnMOzdvh8M9CkSbOFi/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmVkNmQ2OTg3M2JjZTZmMzQ0NTlhOGNiYzcxOWI2OTZkNWRhMTM3NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/hcXmpeCUuoIBMRBHyI/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWNlMzczMDczYjRlNDkyMmM1ZDY3MTQyN2U4NGE1NDU3YjAzMjQzYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/UTSxCoPWRbhD3Xn4rt/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmI1MGJmYzZmZGY1Nzc1ZjMzZjMzMTc5OTUzMjMwNGUyN2I0NzU4OSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/9PAHicJQZs9hYEdCfS/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjY1NDYzYmUxZDQ0YmU0OTY1YmE2ZTI0MTdlNzdkMTYwZGI4Y2FmZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/cNNZdRNDuLfH4Q3K7g/giphy.gif"]
+#GIFS = ["https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODVmMGNlNjA0ZjIxNjJhNzg4NzY4MGM4ZGI0MDQzZWJiYTdiM2IyYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/OojQx4M3zYUOk/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmUyMDM1MjAyNTA0MjNmOWI0ZGJkZGY3NTNjNzVkMDY4M2Q0NWViZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/o7GBrAimljPyJHXM4z/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYThiZDkyZTQyMGNmMzYxZTVhN2I0Mjk5YTliODJlMjc2Y2QzYTQ5NCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xHEf4bTL53m0g/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNkNzllMzAxZTJlOGRhZjllNDVlOWZlNDdiZDViNDlmNDIzMWM0ZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/weR19smQUjVhm/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNkNzllMzAxZTJlOGRhZjllNDVlOWZlNDdiZDViNDlmNDIzMWM0ZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/weR19smQUjVhm/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmJkYTRiMzYzMzMxMWZkZWE1OTVjY2IzNDZhMGI2ZDEwYzNhYWMwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/2UtitmPJZVDBTQPDX0/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmJkYTRiMzYzMzMxMWZkZWE1OTVjY2IzNDZhMGI2ZDEwYzNhYWMwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/2UtitmPJZVDBTQPDX0/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTIxMGFiOGJhNzlhN2FjZGRjOGZjMDI2ZTVjYzZkMTVhNjI2ZmFhYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/oKcjVnEYh7DY4/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEyMzY1ZmU1YWZmOTFjNDBjZTFlNDljZjMyZTEwZGIxOTkwNzZmOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fUwxLWCHe26xxAcATE/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzg2ZTgwYzU1OGJiNjAxZDZjYTM5YjNlYWJmMDI0YjBjNzhkZWNiNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/FnMOzdvh8M9CkSbOFi/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmVkNmQ2OTg3M2JjZTZmMzQ0NTlhOGNiYzcxOWI2OTZkNWRhMTM3NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/hcXmpeCUuoIBMRBHyI/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWNlMzczMDczYjRlNDkyMmM1ZDY3MTQyN2U4NGE1NDU3YjAzMjQzYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/UTSxCoPWRbhD3Xn4rt/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmI1MGJmYzZmZGY1Nzc1ZjMzZjMzMTc5OTUzMjMwNGUyN2I0NzU4OSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/9PAHicJQZs9hYEdCfS/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjY1NDYzYmUxZDQ0YmU0OTY1YmE2ZTI0MTdlNzdkMTYwZGI4Y2FmZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/cNNZdRNDuLfH4Q3K7g/giphy.gif"]
+GIFS = ["https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFjNjM1MjI4ODFmNjM4YTAwZTQzYzE0NTM3MTVhZDkyNTk3YTM5OSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/6cHx13hOiXSvByUDFN/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFkNWFiYzYwMjI5YmYzMmVhMjUwNDY2OWQwMjRhNWM1ZWViNGFjNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/EhhvAIu3Foarv3oOue/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NjOWM5Mjc3ZGVmMzliYmFlMjA5N2M2OTg0ZTZhMTI4YjcxMTBmYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/dtX0liNWmhzcELnZvP/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjlhMTlmZGU1ZDY0YmNhZWI5ZTkyMTY5ZjlkNWY0ODYwZGY4MzQwMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/6Ec6P8eyBm7XpdFVIc/giphy.gif", "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWU0YjcyMTlmYmJlMTUwYzI4MGY3OGZhMTk3MGJmOGJjNmY5MTA4NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/VaLtl8EWdGWbb1rhZm/giphy.gif"]
+RULES = "https://i.imgur.com/e4Kz5hi.jpeg"
 
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
 BOT_ID = client.api_call("auth.test")['user_id']
+
+HOLIDAYS = [ [1,1], [1,5], [4,5], [23,6], [24,6], [18,11], [24,12], [25,12], [26,12], [31,12], [9,7,2023], [10,7,2023], [20,11,2023], [29,3,2024], [1,4,2024], [6,5,2024], [18,4,2025], [21,4,2025], [5,5,2025] ]
+
 
 
 def getChannelId(CHANNEL_NAME):
@@ -80,6 +85,11 @@ def getData():
 #    print("data read")
 
 
+def isHoliday(tm):
+    global HOLIDAYS
+    for v in HOLIDAYS:
+        if tm.tm_mday==v[0] and tm.tm_mon==v[1] and (len(v)<3 or tm.tm_year==v[2] ): return True
+    return False
 
 
 def getNextTime(type = 0):
@@ -87,16 +97,14 @@ def getNextTime(type = 0):
     if type>0: h = TIME_ANNOUNCE
     t = time.time() + 3600*24
     tm = time.localtime(t)
-    while tm.tm_wday>4:
+    while tm.tm_wday>4 or isHoliday(tm)==True:
         t += 3600*24
         tm = time.localtime(t)
 
     tt = time.mktime( (tm.tm_year, tm.tm_mon, tm.tm_mday, h, 0, 0, tm.tm_wday, tm.tm_yday, tm.tm_isdst) )
-#    print(time.localtime(tt))
 
     if SHORT_CYCLE: tt = (int(time.time()/300)+1)*300 + 60*type
     return tt
-
 
 
 def getScores():
@@ -118,8 +126,6 @@ def updateScores(scores, update, winner=True):
     for k, v in scores.items():
         if winner==False:
             scores[k] = float(scores[k])*0.9
-        else:
-            if k==winner: scores[k] = float(scores[k])*0.05
     for k, v in update.items():
         try: scores[k] += 0
         except: scores[k] = 0
@@ -161,7 +167,7 @@ def announce():
     global NEXT_WINNER
     if len(NEXT_WINNER)<2: return
     n = random.randint(0, len(GIFS)-1)
-    message = [{"type": "section","text": {"type": "mrkdwn","text": ":cupcake: *Šodien foršas dienas vēlējumu loterijas uzvarētājs ir... <@"+NEXT_WINNER+">* :cupcake:\n---- sūti <@"+NEXT_WINNER+"> apsveikumu, pieminot viņu un <@"+BOT_ID+">\n---- <https://google.com|Uzzini vairāk, kā piedalīties loterijā>"}},{"type": "image","block_id": "image4","image_url": GIFS[n],"alt_text": "a gif"}]
+    message = [{"type": "section","text": {"type": "mrkdwn","text": ":cupcake: *Šodien foršas dienas vēlējumu loterijas uzvarētājs ir... <@"+NEXT_WINNER+">* :cupcake:\n---- sūti <@"+NEXT_WINNER+"> foršas dienas vēlējumus šajā kanālā, pieminot viņu un <@"+BOT_ID+">\n---- <"+RULES+"|Uzzini vairāk, kā piedalīties loterijā>"}},{"type": "image","block_id": "image4","image_url": GIFS[n],"alt_text": "a gif"}]
     client.chat_postMessage(channel='#'+CHANNEL_NAME, text='', blocks=message )
     print("----- the winner is "+NEXT_WINNER+" -----")
 
@@ -174,6 +180,7 @@ def getMessages():
     others = {}
 
     try:
+#        print("attempt...")
         result = client.conversations_history(
             channel=CHANNEL_ID,
             inclusive=True,
@@ -200,11 +207,8 @@ def getMessages():
                     if updates[usr]<0: updates[usr] = 0
                 else: others[usr] = 1
 
-        # UPDATE SCORE UPDATES HERE
-
         print("messages loaded")
         getMessagesAgain = False
-
  
     except:
         print("failed to load messages")
@@ -215,26 +219,25 @@ def getMessages():
         scores = updateScores(scores, updates)
         winner = lottery(scores)
         scores[winner] *= 0.05
-        updateScores(scores, {})
+        updateScores(scores, {}, False)
     else:
         if len(others)>0:
             scores = getScores()
             winner = lottery(others)
             scores[winner] = 0.05
-            updateScores(scores, {})
+            updateScores(scores, {}, False)
             print("no greetings found. picked the winner among regular users")
         else:
             print("no activity in channel to start the lottery")
 
-            
-            
+
+
 def checkTime():
     getData()
 
     global NEXT_FETCH
     global NEXT_ANNOUNCE
     global PREV_ANNOUNCE
-
 
     if time.time()>=NEXT_FETCH:
         getMessages()
@@ -247,14 +250,13 @@ def checkTime():
     setData()
 
 
-    
 def tick():
 
     tt = round(max(1, min( NEXT_FETCH-time.time(), NEXT_ANNOUNCE-time.time() )))
     ttx = "winner selection"
     if NEXT_FETCH>NEXT_ANNOUNCE: ttx = "announcement"
     print(str(tt)+" sec until next "+ttx)
-    time.sleep( max(2,tt/4) )
+    time.sleep( max(2,tt/2) )
 
     checkTime()
     global getMessagesAgain
@@ -264,5 +266,5 @@ def tick():
 
 tick()
 
-if __name__ == "__main__":
-    app.run(debug=True)
+#if __name__ == "__main__":
+#    app.run(debug=True)
