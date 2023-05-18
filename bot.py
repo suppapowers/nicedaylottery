@@ -172,6 +172,20 @@ def announce():
     print("----- the winner is "+NEXT_WINNER+" -----")
 
 
+def getUsers():
+    users_store = {}
+    try:
+        result = client.users_list()
+        for user in result["members"]:
+            if user["id"]!="USLACKBOT" and user["is_bot"]==False and user["deleted"]==False and user["is_restricted"]==False and user["is_ultra_restricted"]==False:
+                users_store[user["id"]] = 0.1
+    except SlackApiError as e:
+        logger.error("error creating conversation: {}".format(e))
+    return users_store
+
+
+
+
 
 getMessagesAgain = False
 
@@ -228,7 +242,12 @@ def getMessages():
             updateScores(scores, {}, False)
             print("no greetings found. picked the winner among regular users")
         else:
-            print("no activity in channel to start the lottery")
+            all =  getUsers()
+            scores = getScores()
+            winner = lottery(all)
+            all[winner] = 0.05
+            updateScores(scores, all, False)
+            print("no activity in channel to start the lottery. picked winner among users")
 
 
 
